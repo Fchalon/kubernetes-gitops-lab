@@ -24,7 +24,7 @@ replicas:
 images:
 
   - name: nginx
-    newTag: "inexistant"
+    newTag: "1.28"
 
 patches:
 
