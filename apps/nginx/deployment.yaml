@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:inexistante
+          image: nginx:1.27
 
           ports:
             - containerPort: 80
