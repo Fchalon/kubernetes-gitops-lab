@@ -5,7 +5,7 @@ resources:
 
   - ../../base
 
-namespace: formation-qualification
+namespace: formation-qualif
 
 labels:
 
