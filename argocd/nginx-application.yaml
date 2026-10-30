@@ -6,7 +6,7 @@ metadata:
   namespace: argocd
 
 spec:
-  project: default
+  project: formation
 
   source:
     repoURL: https://github.com/Fchalon/kubernetes-gitops-lab.git

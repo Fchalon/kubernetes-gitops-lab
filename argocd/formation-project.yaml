@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+
+metadata:
+  name: formation
+  namespace: argocd
+
+spec:
+
+  sourceRepos:
+    - 'https://github.com/Fchalon/kubernetes-gitops-lab.git'
+
+  destinations:
+
+    - namespace: 'formation-*'
+      server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+
+    - group: ""
+      kind: Namespace
