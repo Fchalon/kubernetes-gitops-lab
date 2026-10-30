@@ -1,0 +1,31 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+
+  - ../../base
+
+namespace: formation-qualif
+
+labels:
+
+  - pairs:
+      environment: qualif
+    includeSelectors: true
+    includeTemplates: true
+
+namePrefix: qualif-
+
+replicas:
+
+  - name: nginx
+    count: 7
+
+images:
+
+  - name: nginx
+    newTag: "1.27"
+
+patches:
+
+  - path: patch_deployment_dev.yaml

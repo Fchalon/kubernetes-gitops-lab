@@ -16,6 +16,7 @@ spec:
           - env: dev
 
           - env: prod
+          - env: qualif
 
   template:
 
