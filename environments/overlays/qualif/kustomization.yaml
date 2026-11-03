@@ -19,7 +19,7 @@ namePrefix: qualif-
 replicas:
 
   - name: nginx
-    count: 10
+    count: 4
 
 images:
 
