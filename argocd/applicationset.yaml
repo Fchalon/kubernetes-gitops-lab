@@ -30,6 +30,7 @@ spec:
       source:
         repoURL: https://github.com/Fchalon/kubernetes-gitops-lab.git
         targetRevision: main
+        targetRevision: v1.0.0
         path: 'environments/overlays/{{env}}'
 
       destination:
